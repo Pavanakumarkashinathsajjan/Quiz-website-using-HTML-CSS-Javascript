@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <H2>QUIZPLATFORM</H2>
+            </div>
+        </div>
+
+        <div id="startSection" class="center">
+            <div id="description">
+                <p>For taking quiz you have click the quiz button </p><br>
+                <p> For check the leaderboard you have click the leaderboard button</p>
+            </div>
+            <div class="but">
+                <button class="btn1" onclick="showForm()">Take Quiz</button>
+                <button class="btn1" onclick="showLeaderboard()">Leaderboard</button>
+                <button id="clearLeaderboardBtn" class="btn1">Clear Leaderboard</button> 
+            </div>
+        </div>
+
+        <div class="smallcontainer">
+
+            <form id="formSection" style="display: none;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="username" name="username" spellcheck="false"
+                    autocomplete="off" required>
+                <label for="quizStream">Select Quiz Stream:</label>
+                <select id="quizStream" name="quizStream" required>
+                    <option value="Sports">Sports Quiz</option>
+                    <option value="Research">Research Quiz</option>
+                    <option value="Movie">Movie Quiz</option>
+                </select>
+                <button type="button" onclick="startQuiz()">Start Quiz</button>
+            </form>
+
+            <div id="quizSection" class="center" style="display: none;">
+
+                <div class="QuestionBox Q1">
+                    <h3 class="ques"></h3>
+                    <div class="timer" id="timer"></div>
+                    <div class="options">
+                        <ul>
+                            <li>
+                                <input id="ans1" type="radio" name="radAnswer" class="option">
+                                <label id="option1" for="ans1"></label>
+                            </li>
+                            <li>
+                                <input id="ans2" type="radio" name="radAnswer" class="option">
+                                <label id="option2" for="ans2"></label>
+                            </li>
+                            <li>
+                                <input id="ans3" type="radio" name="radAnswer" class="option">
+                                <label id="option3" for="ans3"></label>
+                            </li>
+                            <li>
+                                <input id="ans4" type="radio" name="radAnswer" class="option">
+                                <label id="option4" for="ans4"></label>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn" type="button" name="button">Submit</button>
+                    
+                </div>
+
+                
+                <div class="scoreSection">
+                    
+                    <div class="scoreArea">
+                        <h1 class="scoreTxt">Hii</h1>
+                        <p id="totalTime"></p>  
+                        <button class="btn2" type="button" name="button" onclick="refreshPage()">Home</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div id="leaderboardSection" class="center" style="display: none;">
+ 
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

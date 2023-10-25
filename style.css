@@ -1,0 +1,418 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(#5672f0, hsl(229, 83%, 49%));
+   
+}
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: rgb(253, 253, 253);
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(236, 7, 7);
+}
+
+span {
+    color: #11100f;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#description{
+    /* background-color: #ccc; */
+    padding:100px;
+    margin-left: 20%;
+    margin: center;
+ 
+}
+
+#description p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 7px;
+    margin-left: 97px;
+    margin-top: 2px;
+}
+
+.smallcontainer {
+    margin: 100px;
+}
+
+#discription{
+    font-size: 20px;
+     max-width: 750px;
+     margin: 0  auto;
+     color: rgb(6, 1, 1);
+
+}
+
+p{
+    font-size: 20px;
+}
+
+.info_box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.info_box .info-title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info-list{
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info_box .info-list .info span{
+    font-weight: 600;
+    color: #007bff;
+}
+
+.btn1 {
+    display: inline-block;
+    margin-right: 10px;
+    color: #11100f;
+    background-color: rgb(253, 253, 253);
+    border: 1px solid #000000;
+    font-weight: 600;
+    border-radius: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 59px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 12px;
+    padding: 18px 41px;
+  }
+
+  .btn1:hover {
+    background-color: #e74c3c; /* Change background color on hover */
+}
+  .but{
+    margin-left: 30%;
+  }
+  
+/* ------------  play.html ------------ */
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  form label {
+    display: block;
+    margin: 20px 2px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  form button {
+    color: #fff;
+    background-color: #121212;;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .options li,
+  .scoreTxt,
+  .score {
+    color: rgb(253, 253, 253);;
+  }
+
+  .ques,
+.btn,
+.btn2 {
+  color: rgb(6, 1, 1);;
+}
+
+.hi{
+    background-color: #ffff;
+}
+
+.options li,
+.QuestionBox {
+  font-size: 15px;
+}
+
+.options li,
+.ques {
+  border-radius: 10px;
+}
+
+.btn,
+.btn2 {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  height: 40px;
+  width: 130px;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  padding-top: 25px;
+}
+
+.timer {
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.options li,
+.QuestionBox {
+  width: 600px;
+}
+
+.options li,
+.ques {
+  padding-left: 30px;
+}
+
+.options li {
+  box-shadow: 1px 1px 1px 0px #f2f2f2;;
+  height: 50px;
+  border: 2px solid #f2f2f2;;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: rgb(207, 92, 4);
+}
+
+.QuestionBox {
+  height: 400px;
+}
+
+.options,
+.btn,
+.btn2 {
+  margin-top: 5%;
+}
+
+.ques {
+  padding-top: 20px;
+  margin-top: 8%;
+  height: 70px;
+}
+
+.btn {
+  margin-left: 78%;
+}
+
+ul {
+  list-style: none;
+}
+
+.scoreSection {
+  visibility: hidden;
+}
+
+.scoreSection,
+.QuestionBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.score,
+.ques {
+  font-weight: bold;
+}
+
+#leaderboardSection {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#leaderboardSection h2{
+  word-spacing: 5px;
+  color: #121212;
+}
+
+#leaderboardSection table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#leaderboardSection table,
+th,
+td {
+  border: 1px solid #080808;
+  color: #121212;
+}
+
+#leaderboardSection th,
+#leaderboardSection td {
+  padding: 10px;
+}
+
+#leaderboardSection th {
+ background-color: rgb(236, 7, 7);
+  color: #fff;
+}
+
+#leaderboardSection tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#leaderboardSection tr:hover {
+  background-color: #ddd;
+}
+
+#leaderboardSection button {
+    color: #000000;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 30%;
+    margin-top: 29px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+
+#leaderboardSection button:hover {
+    background-color: #e74c3c; /* Change background color on hover */
+}
+
+/* Style for the Clear Leaderboard button */
+    #clearLeaderboardBtn {
+        background-color: #fff;
+        color: #000000;
+        border: none;
+        padding: 18px 14px;
+        cursor: pointer;
+        margin-bottom: 33px;
+        margin-top: -23px;
+        margin-left: 0px;
+        border: 1px solid #000000;
+}
+
+#clearLeaderboardBtn:hover {
+    background-color: #e74c3c; /* Change background color on hover */
+}
+
+
+@media only screen and (max-width: 425px) {
+    html,
+    body {
+      width: 100% !important;
+      overflow-x: hidden !important;
+    }
+    .QuestionBox,
+    .options li {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .btn {
+      margin-left: 68%;
+    }
+    .btn1 {
+      width: 100%;
+    }
+    form {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .QuestionBox,
+    .options li {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .btn {
+      margin-left: 58%;
+    }
+    .btn1 {
+      width: 100%;
+    }
+  
+    form {
+      width: 90%;
+    }
+  }
